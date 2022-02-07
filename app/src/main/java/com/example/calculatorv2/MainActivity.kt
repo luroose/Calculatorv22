@@ -2,13 +2,17 @@ package com.example.calculatorv2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        var a = ""
+        var b = 0
+        var c = ""
+        var d : Double = 0.0
         button31.setOnClickListener {
             textView.setText("0")
         }
@@ -96,6 +100,54 @@ class MainActivity : AppCompatActivity() {
                 textView.setText("0")
             } else {
                 textView.setText(textView.text.toString().dropLast(1))
+            }
+            button18.setOnClickListener {
+                if (!textView.text.toString().contains(".")) {
+                    textView.text = textView.text.toString() + "."
+                }
+            }
+            button32.setOnClickListener {
+                c = "/"
+                a = textView.text.toString()
+                textView.setText("0")
+            }
+            button15.setOnClickListener {
+                c = "*"
+                a = textView.text.toString()
+                textView.setText("0")
+            }
+            button19.setOnClickListener {
+                c = "-"
+                a = textView.text.toString()
+                textView.setText("0")
+            }
+            button23.setOnClickListener {
+                c = "+"
+                a = textView.text.toString()
+                textView.setText("0")
+            }
+            button30.setOnClickListener {
+                c = "%"
+                a = textView.text.toString()
+                textView.setText("0")
+            }
+            button19.setOnClickListener {
+                if (c == "/") {
+                    d = (a.toString().toDouble() / textView.text.toString().toDouble())
+                    textView.setText(d.toString())
+                } else if (c == "") {
+                    d = (a.toString().toDouble() * textView.text.toString().toDouble())
+                    textView.setText(d.toString())
+                } else if (c == "-") {
+                    d = (a.toString().toDouble() - textView.text.toString().toDouble())
+                    textView.setText(d.toString())
+                } else if (c == "+") {
+                    d = (a.toString().toDouble() + textView.text.toString().toDouble())
+                    textView.setText(d.toString())
+                }else if (c == "%") {
+                    d = (a.toString().toDouble() % textView.text.toString().toDouble())
+                    textView.setText(d.toString())
+                }
             }
         }
     }
