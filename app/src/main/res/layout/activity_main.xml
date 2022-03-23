@@ -57,6 +57,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
+            android:backgroundTint="#FF0000"
             android:text="+" />
     </LinearLayout>
 
@@ -95,6 +96,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
+            android:backgroundTint="#FF0000"
             android:text="*" />
     </LinearLayout>
 
@@ -132,6 +134,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
+            android:backgroundTint="#FF0000"
             android:text="-" />
     </LinearLayout>
 
@@ -145,6 +148,7 @@
 
         <Button
             android:id="@+id/button31"
+            android:backgroundTint="#FF0000"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
@@ -155,6 +159,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
+            android:backgroundTint="#FF0000"
             android:text="DEL" />
 
         <Button
@@ -162,6 +167,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
+            android:backgroundTint="#FF0000"
             android:text="%" />
 
         <Button
@@ -169,6 +175,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
+            android:backgroundTint="#FF0000"
             android:text="/" />
     </LinearLayout>
 
@@ -190,6 +197,7 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
+                android:backgroundTint="#FF0000"
                 android:text="0" />
         </LinearLayout>
 
@@ -198,6 +206,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
+            android:backgroundTint="#FF0000"
             android:text="." />
 
         <Button
@@ -205,6 +214,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
+            android:backgroundTint="#FF0000"
             android:text="=" />
     </LinearLayout>
 
